@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dengshifeng</groupId>
+  <artifactId>cloud</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+    <!-- 配置servlet jar依赖 -->
+<dependencies>
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version>
+    <scope>provided</scope>
+</dependency>
+<!-- 配置spring-context的jar包依赖 -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.2.7.RELEASE</version>
+</dependency>
+<!-- 配置spring-core的jar包依赖 -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.2.7.RELEASE</version>
+</dependency>
+<!--配置spring-beans的jar包依赖 -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.2.7.RELEASE</version>
+</dependency>
+<!-- 配置spring-webmvc的jar包依赖 -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.7.RELEASE</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-aop</artifactId>
+    <version>5.2.7.RELEASE</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>5.2.7.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis</artifactId>
+    <version>3.5.5</version>
+</dependency>
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis-spring</artifactId>
+    <version>2.0.5</version>
+</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.24</version>
+</dependency>
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.4</version>
+</dependency>
+</dependencies>
+
+	<build>
+  <plugins>  
+      <plugin>  
+                <groupId>org.apache.tomcat.maven</groupId>
+    			<artifactId>tomcat7-maven-plugin</artifactId>
+    			<version>2.2</version>  
+                <configuration>  
+                    <port>8080</port>  
+                    <uriEncoding>UTF-8</uriEncoding>   
+                    <server>tomcat7</server>  
+                </configuration>  
+            </plugin>  
+	</plugins>
+</build>
+</project>
